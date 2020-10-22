@@ -10,11 +10,29 @@
 </header>
 <body>
     <container class="body">        <!--- Should be width = 90% of the screen unless width is 768px switch on mobile template --->
-        <row class="research_bar"></row>
-        <row class="R_display_screen"></row>
+        <rows class="research_bar">
+            <div id="RB_icon"></div>
+            <div id="RB_user_input"></div>
+            <div id="RB_precision"></div>
+        </rows>
+        <rows class="RB_display_screen">
+            <rows id="RB_DS_first_rows">
+                <cols class="RB_DS_item_box"></cols>
+                <cols class="RB_DS_item_box"></cols>
+                <cols class="RB_DS_item_box"></cols>
+                <cols class="RB_DS_item_box"></cols>
+            </rows>
+            <rows id="RB_DS_second_rows">
+                <cols class="RB_DS_item_box"></cols>
+                <cols class="RB_DS_item_box"></cols>
+                <cols class="RB_DS_item_box"></cols>
+                <cols class="RB_DS_item_box"></cols>
+            </rows>
+        </rows>
+
     </container> 
 </body>
 <footer>
-
+    <rows class="pagination"></rows>
 </footer>
 </html>
