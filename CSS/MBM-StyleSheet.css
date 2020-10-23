@@ -78,6 +78,7 @@ display: flex;
 
 .RB_display_screen{
     background-color: white;
+    display: flex;
 }
 
 #DS_first_row{
@@ -87,20 +88,28 @@ display: flex;
     justify-content: space-between;
 }
 
+#DS_second_row{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .DS_item_box{
     background-color: white;
+    width: 20%;
+    padding: 1%;
     margin-bottom: 10px;
-    min-width: 200px;
-    min-height: 315px;
 }
 .IT_image{
     background-color: white;
 }
 
-.IT_image image{
-    max-width: 100%;
-    height: auto;
+.IT_image img{
+ width: 100%;
+ height: auto;
 }
+
 
 .IT_data{
     background-color: white;
@@ -126,6 +135,13 @@ display: flex;
     background-color:white;
 }
 
+.IP{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+
 .D_item_price{
     background-color:white;
     text-align: right;
@@ -134,7 +150,8 @@ display: flex;
 .D_add_cart_btn{
     background-color:white;
     padding: 3px;
-    margin: 3px; 
+    margin: 3px;
+    margin-top: 19px; 
     text-align: right;
 }
 
