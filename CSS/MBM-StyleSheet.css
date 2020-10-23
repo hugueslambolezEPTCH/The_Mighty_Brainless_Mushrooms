@@ -1,0 +1,103 @@
+.nav_bar{
+background-color: blue;
+padding: 30px;
+display: flex;
+}
+
+.container_screen{
+    background-color: royalblue;
+    padding: 20px;
+}
+
+.CS_research_bar{
+    background-color: green;
+    padding: 20px;
+    display: flex;
+}
+
+#NB_spacing_nav_bar{
+    width: 60%;
+}
+
+
+
+#RB_icon{
+    background-color: red;
+    padding: 20px;
+}
+
+#RB_user_input{
+    background-color: yellow;
+    padding: 20px;
+}
+
+#RB_precision{
+    background-color: purple;
+    padding: 20px;
+}
+
+.RB_display_screen{
+    background-color: yellow;
+    padding: 20px;
+}
+
+#DS_first_row{
+    background-color: green;
+    padding: 20px;
+}
+
+.DS_item_box{
+    background-color: purple;
+    padding: 20px;
+}
+
+#DS_filters{
+    background-color: orangered;
+    padding: 20px;
+}
+
+.DS_filter{
+    background-color: blue;
+    padding: 20px;
+}
+
+.IT_image{
+    background-color: green;
+    padding: 20px;
+}
+
+.IT_data{
+    background-color: red;
+    padding: 20px;
+}
+
+.D_columns{
+    background-color: orangered;
+    padding: 20px;
+}
+
+.D_item_name{
+    background-color: green;
+    padding: 20px;
+}
+
+.D_item_rating{
+    background-color: yellow;
+    padding: 20px;
+}
+
+.D_item_price{
+    background-color: purple;
+    padding: 20px;
+}
+
+.D_add_cart_btn{
+    background-color: blue;
+    padding: 20px;
+}
+
+.pagination{
+    background-color: crimson;
+    padding: 20px;
+}
+
