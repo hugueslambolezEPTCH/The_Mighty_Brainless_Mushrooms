@@ -1,103 +1,212 @@
+html{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+body{
+    margin-top: 0;
+}
+
 .nav_bar{
-background-color: blue;
-padding: 30px;
+background-color:white;
+display: flex;
+justify-content: space-around;
+max-height: 71px;
+}
+
+#cart_settings{
+   
+   align-self: center;
+}
+
+.NB_settings{
 display: flex;
 }
 
+
+.NB_button{
+    background : none;
+    border : none;
+}
+
 .container_screen{
-    background-color: royalblue;
-    padding: 20px;
+    background-color: white;
 }
 
 .CS_research_bar{
-    background-color: green;
-    padding: 20px;
+    background-color: white;
     display: flex;
+    justify-content: space-around;
+    align-items: stretch;
 }
+
+.CS_research_bar input{
+    border-top-style: hidden ;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: 2px solid ;
+    border-color: black;
+}
+
 
 #NB_spacing_nav_bar{
     width: 60%;
 }
 
-
-
 #RB_icon{
-    background-color: red;
+    background-color:white;
     padding: 20px;
+    
 }
 
 #RB_user_input{
-    background-color: yellow;
+    background-color: white;
     padding: 20px;
+    flex : 4;
+    display: flex;  
+}
+
+#UI_site_search{
+    flex: 4; 
 }
 
 #RB_precision{
-    background-color: purple;
-    padding: 20px;
+    background-color: white;
+    padding-bottom: 20px;
+    display : flex;
 }
 
 .RB_display_screen{
-    background-color: yellow;
-    padding: 20px;
+    background-color: white;
 }
 
 #DS_first_row{
-    background-color: green;
-    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .DS_item_box{
-    background-color: purple;
-    padding: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    min-width: 200px;
+    min-height: 315px;
 }
-
-#DS_filters{
-    background-color: orangered;
-    padding: 20px;
-}
-
-.DS_filter{
-    background-color: blue;
-    padding: 20px;
-}
-
 .IT_image{
-    background-color: green;
-    padding: 20px;
+    background-color: white;
+}
+
+.IT_image image{
+    max-width: 100%;
+    height: auto;
 }
 
 .IT_data{
-    background-color: red;
-    padding: 20px;
+    background-color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .D_columns{
-    background-color: orangered;
-    padding: 20px;
+    background-color:white;
+    flex-grow: 2;
 }
 
 .D_item_name{
-    background-color: green;
-    padding: 20px;
+    background-color:white;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 5px;
 }
 
 .D_item_rating{
-    background-color: yellow;
-    padding: 20px;
+    background-color:white;
 }
 
 .D_item_price{
-    background-color: purple;
-    padding: 20px;
+    background-color:white;
+    text-align: right;
 }
 
 .D_add_cart_btn{
-    background-color: blue;
-    padding: 20px;
+    background-color:white;
+    padding: 3px;
+    margin: 3px; 
+    text-align: right;
 }
 
+p.item_type{
+    background-color:white;
+    font-size: smaller;
+    color: rgb(100, 100, 100);    
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+p.item_name{
+    background-color:white;
+    font-weight: 900;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    margin: 0px;
+}
+
+#DS_filters{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#RB_precision select{
+    -webkit-appearance: none;
+	 -moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	padding: .5em 2em .5em .9em;
+	cursor: pointer;
+	color: rgb(70, 81, 88);
+	font-family: inherit;
+    font-size: 1em;
+    border-top-style: hidden ;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: 2px solid #353535 ;
+	background-color: white;
+	background-image: url(/Resources/Icons/drop_arrow.png);
+	background-size: .8em;
+	background-repeat: no-repeat;
+	background-position: calc(100% - .4em) center;
+}
+
+
+#DS_filters select{
+    width: 100%;
+    margin-bottom: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .5em 2em .5em .9em;
+    cursor: pointer;
+    color: rgb(70, 81, 88);
+    font-family: inherit;
+    font-size: 1em;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 2px solid #c7c7c7;
+    background: none;
+    background-color: rgb(255, 255, 255);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHg9IjBweCIgeT0iMHB4Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTIgMThsLTExLjAxOS0xMWgyMi4wMzh6Ii8+PC9zdmc+);
+    background-size: .8em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - .4em) center;
+}
 .pagination{
-    background-color: crimson;
+    background-color: white;
     padding: 20px;
 }
 
