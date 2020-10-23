@@ -1,6 +1,7 @@
 .nav_bar{
 background-color: blue;
-padding: 20px;
+padding: 30px;
+display: flex;
 }
 
 .container_screen{
@@ -11,7 +12,14 @@ padding: 20px;
 .CS_research_bar{
     background-color: green;
     padding: 20px;
+    display: flex;
 }
+
+#NB_spacing_nav_bar{
+    width: 60%;
+}
+
+
 
 #RB_icon{
     background-color: red;
