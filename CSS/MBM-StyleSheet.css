@@ -1,20 +1,71 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,700&display=swap');
+
+}
+
 /* Start Global settings */
 html{
     padding-left: 15%;
     padding-right: 15%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+*:focus {
+    outline-style: none;
+}
+
+@media only screen and (max-width: 768px){
+
+    #hide_on_mobile {
+        display: none;
+    }
+
+    .nav_bar{
+        grid-template-columns: 71px, auto ,10%;
+    }
+
+    #Cart{
+        grid-column-start: 6;
+    }
 }
 
 body{
-    margin-top: 0;
+    margin: 0;
 }
 /* End Global settings */
 
 /* Start Navigation bar */
 .nav_bar{
-background-color:white;
-display: flex;
-justify-content: space-around;
-max-height: 71px;
+    background-color:none;
+    max-height: 71px;
+    height: 71px;
+    display: grid;
+    grid-template-rows: 71px;
+    grid-template-columns: 71px 10% 10% 10% auto 10% 10% ;
+    align-items: center;
+}
+
+.nav_bar a {
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_bar a:hover {
+    text-decoration: underline;
+    transition: all 0.4s ease-out;
+    color: #353535;
+}
+
+label {
+    display: none;
+}
+
+#toggle {
+    display: none;
 }
 
 .NB_settings{
@@ -39,7 +90,7 @@ max-height: 71px;
 
 /* Start Container Screen*/
 .container_screen{
-    background-color: white;
+    background-color: none;
 }
 
 /* Start research bar */
@@ -57,17 +108,17 @@ max-height: 71px;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: 2px solid #353535 ;
-	background-color: white;
-	background-image: url(/Resources/Icons/drop_arrow.png);
+	background-color: none;
+	background-image: url(/The_Mighty_Brainless_Mushrooms/Resources/Icons/drop_arrow.png);
 	background-size: .8em;
 	background-repeat: no-repeat;
 	background-position: calc(100% - .4em) center;
 }
 
 .CS_research_bar{
-    background-color: white;
+    background-color: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
 }
 
@@ -81,35 +132,44 @@ max-height: 71px;
 
 #UI_site_search{
     flex: 4; 
+    font-size: 25px;
+    background-color: #ffffff;
 }
 
 #RB_icon{
-    background-color:white;
+    background-color:none;
     padding: 20px;
     
 }
 
 #RB_user_input{
-    background-color: white;
+    background-color: none;
     padding: 20px;
-    flex : 4;
+    flex : 3;
     display: flex;  
 }
 
 #RB_precision{
-    background-color: white;
+    background-color: none;
     padding-bottom: 20px;
     display : flex;
+    justify-content: stretch;
+    flex: 1;
+}
+
+#RB_precision select {
+    background-color: #ffffff;
+    flex: 1;
 }
 
 .RB_display_screen{
-    background-color: white;
+    background-color: none;
     display: flex;
 }
 
 /* Start display screen */
 .DS_Filter_by{
-    background-color: white;
+    background-color: none;
     margin-bottom: 15px;
     color: rgb(122, 122, 122);
 
@@ -129,20 +189,20 @@ max-height: 71px;
     width: 70%;
 }
 .DS_Price_Range{
-    background-color: white;
+    background-color: none;
     margin-bottom: 15px;
     color: rgb(122, 122, 122);
 }
 
 #DS_first_row{
-    background-color: white;
+    background-color: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 #DS_second_row{
-    background-color: white;
+    background-color: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -150,15 +210,12 @@ max-height: 71px;
 
 /* Start Item box */
 .DS_item_box{
-    background-color: white;
-    width: 20%;
+    width: 200px;
     padding: 1%;
     margin-bottom: 10px;
 }
 
 .DS_item_box:hover{
-    background-color: white;
-    width: 20%;
     padding: 1%;
     margin-bottom: 10px;
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
@@ -169,7 +226,7 @@ max-height: 71px;
 }
 
 .IT_image{
-    background-color: white;
+    background-color: none;
 }
 
 .IT_image img{
@@ -178,7 +235,7 @@ max-height: 71px;
 }
 
 .IT_data{
-    background-color: white;
+    background-color: none;
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
@@ -186,19 +243,19 @@ max-height: 71px;
 }
 
 .D_columns{
-    background-color:white;
+    background-color:none;
     flex-grow: 2;
 }
 
 .D_item_name{
-    background-color:white;
+    background-color:none;
     font-weight: bold;
     text-transform: capitalize;
     margin-bottom: 5px;
 }
 
 .D_item_name:hover{
-    background-color:white;
+    background-color:none;
     font-weight: bold;
     text-transform: capitalize;
     margin-bottom: 5px;
@@ -207,12 +264,12 @@ max-height: 71px;
 
 
 .D_item_rating{
-    background-color:white;
+    background-color:none;
 }
 
 
 .D_item_price{
-    background-color:white;
+    background-color:none;
     text-align: right;
 }
 
@@ -222,7 +279,7 @@ max-height: 71px;
 }
 
 .D_add_cart_btn{
-    background-color:white;
+    background-color:none;
     padding: 3px;
     margin: 3px;
     margin-top: 19px; 
@@ -234,15 +291,15 @@ max-height: 71px;
 }
 
 p.item_type{
-    background-color:white;
+    background-color:none;
     font-size: smaller;
-    color: rgb(100, 100, 100);    
+    color: #808080;    
     text-transform: uppercase;
     margin: 0px;
 }
 
 p.item_name{
-    background-color:white;
+    background-color:none;
     font-weight: 900;
     padding-bottom: 15px;
     padding-top: 5px;
@@ -250,7 +307,7 @@ p.item_name{
 }
 
 #DS_filters{
-    background-color: white;
+    background-color: none;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -272,8 +329,8 @@ p.item_name{
     border-left-style: hidden;
     border-bottom: 2px solid #c7c7c7;
     background: none;
-    background-color: rgb(255, 255, 255);
-    background-image: url(/Resources/Icons/drop_arrow.png);
+    background-color: none;
+    background-image: url(/The_Mighty_Brainless_Mushrooms/Resources/Icons/drop_arrow.png);
     background-size: .8em;
     background-repeat: no-repeat;
     background-position: calc(100% - .4em) center;
@@ -313,7 +370,7 @@ margin-right: 15px;
 
 .P_num:hover{
     background-color:rgb(128, 128, 128);
-    color: white;
+    color: none;
     }
 
 #focused {

@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBM - Mighty Brainless Mushrooms</title>
-    <link rel = "stylesheet" type = "text/css" href = "/CSS/MBM-StyleSheet.css" />
-    <link rel = "stylesheet" href = "/Resources/Components/multirange-filter/multirange.css">
-    <script src="/Resources/Components/multirange-filter/multirange.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "/The_Mighty_Brainless_Mushrooms/CSS/MBM-StyleSheet.css" />
+    <link rel = "stylesheet" href = "/The_Mighty_Brainless_Mushrooms/Resources/Components/multirange-filter/multirange.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+    <script src="/The_Mighty_Brainless_Mushrooms/Resources/Components/multirange-filter/multirange.js"></script>
 </head>
-<header>
-<div class="nav_bar">
-    <div><img src="/Resources/Icons/home_logo.png" alt="logo icon"></div>
-    <div class="NB_settings"><button id="NB_home_btn" class="NB_button"type="button">HOME</button></div>
-    <div class="NB_settings"><button id="NB_shop_btn" class="NB_button"type="button">SHOP</button></div>
-    <div class="NB_settings"><button id="NB_magazine_btn" class="NB_button"type="button">MAGAZINE</button></div>
-    <div id="NB_spacing_nav_bar"></div>
-    <div id="cart_settings" class="NB_settings"><img src="/Resources/Icons/cart_button.png" alt="cart icon"></div>
-    <div class="NB_settings"><button id="NB_login_btn" class="NB_button"type="button">LOGIN</button></div>  
-</div>
-</header>
 <body>
+    <div class="nav_bar">
+        <a href="#">
+            <img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/home_logo.png" alt="logo icon">
+        </a>
+        <a href="#" id="hide_on_mobile">HOME</a>    
+        <a href="#" id="hide_on_mobile">SHOP</a>
+        <a href="#" id="hide_on_mobile">MAGAZINE</a>
+        <div id="nav_spacer"></div>
+        <a href="#">
+            <img id="Cart" src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/cart_button.png" alt="cart icon">
+        </a>
+        <a href="#" id="hide_on_mobile">LOGIN</a>
+    </div>
     <div class="container_screen">        <!--- Should be width = 90% of the screen unless width is 768px switch on mobile template --->
         <div class="CS_research_bar">
-            <div id="RB_icon"> <img src="/Resources/Icons/search_icon.png" alt="SearchIcon"></div>
+            <div id="RB_icon"> <img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/search_icon.png" alt="SearchIcon"></div>
             <div id="RB_user_input">
-                <input type="search" id="UI_site_search" name="q" aria-label="Search through site content">
+                <input type="search" id="UI_site_search" name="q" placeholder="The Mighty Brainless Mushrooms">
             </div>
             <div id="RB_precision">
                 <select name="" id="P_select">
@@ -57,7 +60,7 @@
                         </div>
                         <div class="DS_Filter">
                             <div class="DS_Price_Range">
-                            <label for="vol">Price Range</label>
+                            <p for="vol">Price Range</p>
                             </div>
                             <div class="Range_filter">
                             <input type="range" multiple value="0,100" />
@@ -71,7 +74,7 @@
                 </div>
                 <div class="DS_item_box">
                     <div class="IT_image">
-                        <img src="/Resources/Images/mushroom_1.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
+                        <img src="/The_Mighty_Brainless_Mushrooms/Resources/Images/mushroom_1.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
                     </div>
                     <div class="IT_data">
                         <div class="D_columns">
@@ -81,20 +84,20 @@
                             <div class="D_item_type">    
                                 <p class="item_type">Volvaire</p>
                             </div>
-                            <div class="D_item_rating"><img src="/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
+                            <div class="D_item_rating"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
                             </div>
                         </div>
                         <div class="D_columns">
                             <div class="D_item_price">
                                 <p class="IP">9.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
                 <div class="DS_item_box">
                     <div class="IT_image">
-                        <img src="/Resources/Images/mushroom_2.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
+                        <img src="/The_Mighty_Brainless_Mushrooms/Resources/Images/mushroom_2.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
                     </div>
                     <div class="IT_data">
                         <div class="D_columns">
@@ -104,20 +107,20 @@
                             <div class="D_item_type">    
                                 <p class="item_type">Amanites</p>
                             </div>
-                            <div class="D_item_rating"><img src="/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
+                            <div class="D_item_rating"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
                             </div>
                         </div>
                         <div class="D_columns">
                             <div class="D_item_price">
                                 <p class="IP">19.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
                 <div class="DS_item_box">
                     <div class="IT_image">
-                        <img src="/Resources/Images/mushroom_3.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
+                        <img src="/The_Mighty_Brainless_Mushrooms/Resources/Images/mushroom_3.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
                     </div>
                     <div class="IT_data">
                         <div class="D_columns">
@@ -127,20 +130,20 @@
                             <div class="D_item_type">    
                                 <p class="item_type">Lépiote</p>
                             </div>
-                            <div class="D_item_rating"><img src="/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
+                            <div class="D_item_rating"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
                             </div>
                         </div>
                         <div class="D_columns">
                             <div class="D_item_price">
                                 <p class="IP">$49.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
                 <div class="DS_item_box">
                     <div class="IT_image">
-                        <img src="/Resources/Images/mushroom_4.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
+                        <img src="/The_Mighty_Brainless_Mushrooms/Resources/Images/mushroom_4.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
                     </div>
                     <div class="IT_data">
                         <div class="D_columns">
@@ -150,20 +153,20 @@
                             <div class="D_item_type">    
                                 <p class="item_type">Morille</p>
                             </div>
-                            <div class="D_item_rating"><img src="/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
+                            <div class="D_item_rating"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
                             </div>
                         </div>
                         <div class="D_columns">
                             <div class="D_item_price">
                                 <p class="IP">666€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
                 <div class="DS_item_box">
                     <div class="IT_image">
-                        <img src="/Resources/Images/mushroom_5.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
+                        <img src="/The_Mighty_Brainless_Mushrooms/Resources/Images/mushroom_5.jpg" width = "200" height = "200" alt="https://via.placeholder.com/200">
                     </div>
                     <div class="IT_data">
                         <div class="D_columns">
@@ -173,20 +176,20 @@
                             <div class="D_item_type">    
                                 <p class="item_type">Bolet</p>
                             </div>
-                            <div class="D_item_rating"><img src="/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
+                            <div class="D_item_rating"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
                             </div>
                         </div>
                         <div class="D_columns">
                             <div class="D_item_price">
                                 <p class="IP">39.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
                 <div class="DS_item_box">
                     <div class="IT_image">
-                        <img src="/Resources/Images/mushroom_6.jpeg" width = "200" height = "200" alt="https://via.placeholder.com/200">
+                        <img src="/The_Mighty_Brainless_Mushrooms/Resources/Images/mushroom_6.jpeg" width = "200" height = "200" alt="https://via.placeholder.com/200">
                     </div>
                     <div class="IT_data">
                         <div class="D_columns">
@@ -196,20 +199,20 @@
                             <div class="D_item_type">    
                                 <p class="item_type">Bolet</p>
                             </div>
-                            <div class="D_item_rating"><img src="/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
+                            <div class="D_item_rating"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
                             </div>
                         </div>
                         <div class="D_columns">
                             <div class="D_item_price">
                                 <p class="IP">39.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
                 <div class="DS_item_box">
                     <div class="IT_image">
-                        <img src="/Resources/Images/mushroom_7.jpeg" width = "200" height = "200" alt="https://via.placeholder.com/200">
+                        <img src="/The_Mighty_Brainless_Mushrooms/Resources/Images/mushroom_7.jpeg" width = "200" height = "200" alt="https://via.placeholder.com/200">
                     </div>
                     <div class="IT_data">
                         <div class="D_columns">
@@ -219,14 +222,14 @@
                             <div class="D_item_type">    
                                 <p class="item_type">Bolet</p>
                             </div>
-                            <div class="D_item_rating"><img src="/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
+                            <div class="D_item_rating"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/ratings/rating_4_stars.png" alt="rating_4_stars">
                             </div>
                         </div>
                         <div class="D_columns">
                             <div class="D_item_price">
                                 <p class="IP">39.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
@@ -267,7 +270,7 @@
     <p>10</p>
     </div>
     <div class="P_num">
-    <img src="/Resources/Icons/right arrow.png">
+    <img src="/The_Mighty_Brainless_Mushrooms/Resources/Icons/right arrow.png">
     </div>
     </div>
     <div id="spacer"></div>
