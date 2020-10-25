@@ -9,7 +9,7 @@
     <script src="/Resources/Components/multirange-filter/multirange.js"></script>
 </head>
 <header>
-<div class="nav_bar" id="mytopnav">
+<div class="nav_bar">
     <div><img src="/Resources/Icons/home_logo.png" alt="logo icon"></div>
     <div class="NB_settings"><button id="NB_home_btn" class="NB_button"type="button">HOME</button></div>
     <div class="NB_settings"><button id="NB_shop_btn" class="NB_button"type="button">SHOP</button></div>
@@ -37,6 +37,7 @@
             <div id="DS_first_row">
                 <div class="DS_item_box">
                     <div id="DS_filters">
+                        <div class="DS_Filter_by">Filter by</div>
                         <div class="DS_Filter"><select name="" id="">
                             <option value="collection">Collection</option>
                             <option value="collection2">Bolet</option>
@@ -55,13 +56,13 @@
                         </select>
                         </div>
                         <div class="DS_Filter">
-                            <div>
+                            <div class="DS_Price_Range">
                             <label for="vol">Price Range</label>
                             </div>
-                            <div>
+                            <div class="Range_filter">
                             <input type="range" multiple value="0,100" />
                             </div>
-                            <div>
+                            <div class="Range_values">
                             <p>$0</p>
                             <p>$10,000</p>
                             </div>
@@ -87,7 +88,7 @@
                             <div class="D_item_price">
                                 <p class="IP">9.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/cart_button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
@@ -110,7 +111,7 @@
                             <div class="D_item_price">
                                 <p class="IP">19.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/cart_button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
@@ -133,7 +134,7 @@
                             <div class="D_item_price">
                                 <p class="IP">$49.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/cart_button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
@@ -156,7 +157,7 @@
                             <div class="D_item_price">
                                 <p class="IP">666€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/cart_button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
@@ -179,7 +180,7 @@
                             <div class="D_item_price">
                                 <p class="IP">39.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/cart_button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
@@ -202,7 +203,7 @@
                             <div class="D_item_price">
                                 <p class="IP">39.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/cart_button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
@@ -225,7 +226,7 @@
                             <div class="D_item_price">
                                 <p class="IP">39.99€</p>
                             </div>
-                            <div class="D_add_cart_btn"><img src="/Resources/Icons/cart_button.png" alt="CartButton"></div>
+                            <div class="D_add_cart_btn"><img src="/Resources/Icons/Add Cart Button.png" alt="CartButton"></div>
                         </div>
                     </div>
                 </div>
@@ -234,6 +235,41 @@
     </div> 
 </body>
 <footer>
-    <div class="pagination"></div>
+    <div class="pagination">
+    <div class="P_num"id="focused">
+    <p>1</p>
+    </div>
+    <div class="P_num">
+    <p>2</p>
+    </div>
+    <div class="P_num">
+    <p>3</p>
+    </div>
+    <div class="P_num">
+    <p>4</p>
+    </div>
+    <div class="P_num">
+    <p>5</p>
+    </div>
+    <div class="P_num">
+    <p>6</p>
+    </div>
+    <div class="P_num">
+    <p>7</p>
+    </div>
+    <div class="P_num">
+    <p>8</p>
+    </div>
+    <div class="P_num">
+    <p>9</p>
+    </div>
+    <div class="P_num">
+    <p>10</p>
+    </div>
+    <div class="P_num">
+    <img src="/Resources/Icons/right arrow.png">
+    </div>
+    </div>
+    <div id="spacer"></div>
 </footer>
 </html>

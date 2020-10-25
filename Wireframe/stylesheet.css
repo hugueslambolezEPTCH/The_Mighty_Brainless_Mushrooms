@@ -1,0 +1,29 @@
+.grid_container_nav_bar{
+background-image: url(/Resources/Images/mushroom_1.jpg);
+    display: grid;
+    background-repeat: none;
+grid-column:50px;
+background-color: red;
+padding: 20px;
+}
+
+ 
+
+.NB_settings{
+display: inline-grid;
+background-color: blue;
+padding: 20px;
+
+}
+
+ 
+.grid_container_info {
+display: inline-grid;
+background-color: yellow;
+padding: 20px;
+
+}
+
+footer{
+    background-color: chartreuse;
+}
