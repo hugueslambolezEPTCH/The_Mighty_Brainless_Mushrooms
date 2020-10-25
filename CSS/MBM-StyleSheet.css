@@ -1,3 +1,4 @@
+/* Start Global settings */
 html{
     padding-left: 15%;
     padding-right: 15%;
@@ -6,7 +7,9 @@ html{
 body{
     margin-top: 0;
 }
+/* End Global settings */
 
+/* Start Navigation bar */
 .nav_bar{
 background-color:white;
 display: flex;
@@ -14,23 +17,46 @@ justify-content: space-around;
 max-height: 71px;
 }
 
-#cart_settings{
-   
-   align-self: center;
-}
-
 .NB_settings{
-display: flex;
-}
-
+    display: flex;
+    }
 
 .NB_button{
-    background : none;
-    border : none;
+        background : none;
+        border : none;
+    }
+
+#NB_spacing_nav_bar{
+    width: 60%;
 }
 
+/* End Navigation bar */
+
+/* Start Container Screen*/
 .container_screen{
     background-color: white;
+}
+
+/* Start research bar */
+#RB_precision select{
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	padding: .5em 2em .5em .9em;
+	cursor: pointer;
+	color: rgb(70, 81, 88);
+	font-family: inherit;
+    font-size: 1em;
+    border-top-style: hidden ;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: 2px solid #353535 ;
+	background-color: white;
+	background-image: url(/Resources/Icons/drop_arrow.png);
+	background-size: .8em;
+	background-repeat: no-repeat;
+	background-position: calc(100% - .4em) center;
 }
 
 .CS_research_bar{
@@ -48,9 +74,8 @@ display: flex;
     border-color: black;
 }
 
-
-#NB_spacing_nav_bar{
-    width: 60%;
+#UI_site_search{
+    flex: 4; 
 }
 
 #RB_icon{
@@ -66,10 +91,6 @@ display: flex;
     display: flex;  
 }
 
-#UI_site_search{
-    flex: 4; 
-}
-
 #RB_precision{
     background-color: white;
     padding-bottom: 20px;
@@ -81,6 +102,7 @@ display: flex;
     display: flex;
 }
 
+/* Start display screen */
 #DS_first_row{
     background-color: white;
     display: flex;
@@ -95,12 +117,18 @@ display: flex;
     justify-content: space-between;
 }
 
+/* Start Item box */
 .DS_item_box{
     background-color: white;
     width: 20%;
     padding: 1%;
     margin-bottom: 10px;
 }
+
+#cart_settings{
+   align-self: center;
+}
+
 .IT_image{
     background-color: white;
 }
@@ -109,7 +137,6 @@ display: flex;
  width: 100%;
  height: auto;
 }
-
 
 .IT_data{
     background-color: white;
@@ -135,16 +162,15 @@ display: flex;
     background-color:white;
 }
 
-.IP{
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-}
-
 
 .D_item_price{
     background-color:white;
     text-align: right;
+}
+
+.IP{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .D_add_cart_btn{
@@ -178,28 +204,6 @@ p.item_name{
     flex-direction: column;
 }
 
-#RB_precision select{
-    -webkit-appearance: none;
-	 -moz-appearance: none;
-	appearance: none;
-	display: inline-block;
-	padding: .5em 2em .5em .9em;
-	cursor: pointer;
-	color: rgb(70, 81, 88);
-	font-family: inherit;
-    font-size: 1em;
-    border-top-style: hidden ;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: 2px solid #353535 ;
-	background-color: white;
-	background-image: url(/Resources/Icons/drop_arrow.png);
-	background-size: .8em;
-	background-repeat: no-repeat;
-	background-position: calc(100% - .4em) center;
-}
-
-
 #DS_filters select{
     width: 100%;
     margin-bottom: 30px;
@@ -222,8 +226,16 @@ p.item_name{
     background-repeat: no-repeat;
     background-position: calc(100% - .4em) center;
 }
+
+/* End Item Box */
+/* End display screen */
+/* End Container screen */
+
+/* Start pagination */
 .pagination{
     background-color: white;
     padding: 20px;
 }
+
+/* End pagination */
 
